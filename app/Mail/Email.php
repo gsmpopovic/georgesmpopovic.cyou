@@ -21,7 +21,7 @@ class Email extends Mailable
     public function build()
     {
         $address = 'georgesmpopovic@gmail.com';
-        $subject = "New mail from: $this->data['name'] @ $this->data['email']";
+        $subject = '';//"New mail from: $this->data['name'] @ $this->data['email']";
         $name = 'George Popovic';
 
         return $this->view('emails.index')
