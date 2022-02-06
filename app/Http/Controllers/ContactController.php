@@ -32,7 +32,7 @@ public function index(Request $request){
 
     $data = ['message' => $request->get('message')];
 
-    Mail::to('georgesmpopovic@gmail.com')->send(new Email($data));
+    \Mail::to('georgesmpopovic@gmail.com')->send(new Email($data));
 
     return back()->with('success', 'Thanks for contacting me, I will get back to you soon!');
 
