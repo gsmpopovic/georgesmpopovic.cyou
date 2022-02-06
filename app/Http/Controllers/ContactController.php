@@ -31,10 +31,10 @@ public function index(Request $request){
     // });
 
     $data = [
-        'message' => $request->input('message'),
-        'name' => $request->input('name'),
-        'phone' => $request->input('phone'),
-        'email' => $request->input('email')
+        // 'message' => $request->input('message'),
+        // 'name' => $request->input('name'),
+        // 'phone' => $request->input('phone'),
+        // 'email' => $request->input('email')
     ];
 
     \Mail::to('georgesmpopovic@gmail.com')->send(new Email($data));
