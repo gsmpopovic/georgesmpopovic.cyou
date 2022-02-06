@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Mail\TestEmail as Mail; 
+use App\Mail\Email as Email; 
 
 class ContactController extends Controller
 {
@@ -13,23 +13,29 @@ class ContactController extends Controller
     }
     //
 public function index(Request $request){
+
     $this->validate($request, [
         'name' => 'required',
         'email' => 'required|email',
         'message' => 'required'
-]);
+    ]);
 
-\Mail::send('email', [
-'name' => $request->get('name'),
-'email' => $request->get('email'),
-'comment' => $request->get('message') ],
-function ($message) {
-        $message->from('gsmpopovicdev@gmail.com');
-        $message->to('gsmpopovicdev@gmail.com', 'George Popovic')
-        ->subject('Your Website Contact Form');
-});
+    // \Mail::send('email', [
+    // 'name' => $request->get('name'),
+    // 'email' => $request->get('email'),
+    // 'comment' => $request->get('message') ],
+    // function ($message) {
+    //         $message->from('george');
+    //         $message->to('george', 'George Popovic')
+    //         ->subject('Your Website Contact Form');
+    // });
 
-return back()->with('success', 'Thanks for contacting me, I will get back to you soon!');
+    $data = ['message' => $request->get('message')];
+
+    Mail::to('georgesmpopovic@gmail.com')->send(new Email($data));
+
+    return back()->with('success', 'Thanks for contacting me, I will get back to you soon!');
 
 }
+
 }
