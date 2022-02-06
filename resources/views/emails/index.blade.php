@@ -5,6 +5,5 @@
   </head>
   <body>
     <h2>You've got mail!</h2>
-    <p>{{ $message }}</p>
   </body>
 </html>
