@@ -9,27 +9,12 @@
     <!-- Navigation-->
     @include('nav')
     <!-- Masthead-->
-    <header class="masthead">
-        <div class="container">
-            <div class="masthead-subheading">Hi, my name is George.</div>
-            <div class="masthead-subheading">I'm <span class="type-text" data-period="2000"
-                    data-rotate='[ "a web designer.", "a developer.", "a writer." ]'></span></div>
-            <!-- <div class="masthead-heading text-uppercase"></div> -->
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Follow me</a>
-        </div>
-    </header>
+    @include('header')
     <!-- Services-->
     @include('services')
     <!-- Portfolio Grid-->
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
-            <!-- <div class="text-center">
-                <h2 class="section-heading text-uppercase" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Portfolio</h2>
-                <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Here's what I do.</h3>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mb-4" data-aos="fade-up" href="./assets/cv/GPresume.docx" download>Download my CV</a>
-            </div> -->
-
-
             <div class="row">
                 <!-- Modal 1 -->
                 <div class="col-lg-4 col-sm-6 mb-4">
