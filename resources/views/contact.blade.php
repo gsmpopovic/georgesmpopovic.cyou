@@ -1,4 +1,9 @@
 <section class="page-section" id="contact">
+    @if(session()->has('message'))
+    <div class="alert alert-info">
+        {{ session('message') }}
+    </div>
+ @endif
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">What's YOUR story?</h2>

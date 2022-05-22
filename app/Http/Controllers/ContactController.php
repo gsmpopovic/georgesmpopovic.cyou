@@ -39,7 +39,7 @@ public function index(Request $request){
 
     // \Mail::to('georgesmpopovic@gmail.com')->send(new Email($data));
 
-    return back()->with('success', 'Thanks for contacting me, I will get back to you soon!');
+    return back()->with('message', 'Thanks for contacting me, I will get back to you soon!');
 
 }
 
