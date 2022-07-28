@@ -15,12 +15,15 @@
     <!-- Portfolio Grid-->
     @include("portfolio")
     <!-- Contact-->
-    @include('contact')
+    @livewire('contact-form')
     <!-- Footer-->
     @include('footer')
     <!-- Portfolio Modals-->
     @include('footer-scripts')
     @livewireScripts
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+    <x-livewire-alert::scripts />
 
 </body>
 
