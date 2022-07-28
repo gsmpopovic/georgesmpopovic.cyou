@@ -20,6 +20,8 @@
     @include('footer')
     <!-- Portfolio Modals-->
     @include('footer-scripts')
+    @livewireScripts
+
 </body>
 
 </html>
