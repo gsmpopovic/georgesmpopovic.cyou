@@ -30,10 +30,12 @@
                                         <p class="item-intro text-muted">{{$modal->subtitle}}</p>
                                         <img class="img-fluid d-block mx-auto" src="{{$modal->thumbnail}}"
                                             alt="" />
+                                        @if($modal->github_link != null)
                                         <h2>
                                             <a href="{{$modal->github_link}}" target="_blank"> <i
                                                     class="fab fa-github-square"></i> {{$modal->title}}</a>
                                         </h2>
+                                        @endif
                                         <p>{{$modal->description}}
                                         </p>
                                         <ul class="list-inline">

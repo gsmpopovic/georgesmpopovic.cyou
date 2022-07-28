@@ -15,6 +15,9 @@ class Modal extends Model
         "thumbnail",
         "description",
         "github_link",
-        "external_link"
+        "external_link",
+        "start_date",
+        "end_date",
+        "category"
     ];
 }

@@ -21,6 +21,9 @@ class CreateModalsTable extends Migration
             $table->string("thumbnail");
             $table->string("github_link");
             $table->string("external_link");
+            $table->string("start_date");
+            $table->string("end_date");
+            $table->string("category");
             $table->timestamps();
         });
     }
