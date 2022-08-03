@@ -15,6 +15,7 @@
 
         <!-- Scripts -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <script src="{{ mix('js/app.js') }}"></script>
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
