@@ -5,8 +5,8 @@
     </div>
     <div class="container">
         <div class="row">
-            @foreach (\App\Models\Modal::all() as $modal)
-                @include('modal', ['modal' => $modal])
+            @foreach (\App\Models\PortfolioItem::all() as $portfolio_item)
+                @include('modal', ['portfolio_item' => $portfolio_item])
             @endforeach
         </div>
     </div>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateModalsTable extends Migration
+class CreatePortfolioItemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateModalsTable extends Migration
      */
     public function up()
     {
-        Schema::create('modals', function (Blueprint $table) {
+        Schema::create('portfolio_items', function (Blueprint $table) {
             $table->id();
             $table->string("title");
             $table->string("subtitle");
@@ -35,6 +35,6 @@ class CreateModalsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('modals');
+        Schema::dropIfExists('portfolio_items');
     }
 }
