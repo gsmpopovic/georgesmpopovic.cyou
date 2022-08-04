@@ -19,8 +19,8 @@ class CreatePortfolioItemsTable extends Migration
             $table->string("subtitle");
             $table->string("description");
             $table->string("thumbnail");
-            $table->string("github_link");
-            $table->string("external_link");
+            $table->string("github_link")->nullable();
+            $table->string("external_link")->nullable();
             $table->string("start_date");
             $table->string("end_date");
             $table->string("category");
