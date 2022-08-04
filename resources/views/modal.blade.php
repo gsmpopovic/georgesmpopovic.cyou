@@ -30,7 +30,7 @@
                                         <p class="item-intro text-muted">{{$portfolio_item->subtitle}}</p>
                                         <img class="img-fluid d-block mx-auto" src="{{$portfolio_item->thumbnail_absolute_path}}"
                                             alt="" />
-                                        @if($portfolio_item->github_link != null)
+                                        @if(isset($portfolio_item->github_link))
                                         <h2>
                                             <a href="{{$portfolio_item->github_link}}" target="_blank"> <i
                                                     class="fab fa-github-square"></i> {{$portfolio_item->title}}</a>
