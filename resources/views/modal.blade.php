@@ -5,7 +5,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="{{$portfolio_item->thumbnail}}" alt="" />
+                        <img class="img-fluid" src="{{$portfolio_item->thumbnail_absolute_path}}" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">{{$portfolio_item->title}}</div>
@@ -28,7 +28,7 @@
                                         <!-- Project Details Go Here-->
                                         <h2 class="text-uppercase">{{$portfolio_item->title}}</h2>
                                         <p class="item-intro text-muted">{{$portfolio_item->subtitle}}</p>
-                                        <img class="img-fluid d-block mx-auto" src="{{$portfolio_item->thumbnail}}"
+                                        <img class="img-fluid d-block mx-auto" src="{{$portfolio_item->thumbnail_absolute_path}}"
                                             alt="" />
                                         @if($portfolio_item->github_link != null)
                                         <h2>
@@ -39,8 +39,8 @@
                                         <p>{{$portfolio_item->description}}
                                         </p>
                                         <ul class="list-inline">
-                                            <li>Date: May 2020</li>
-                                            <li>Category: Web Development</li>
+                                            <li>Start Date: {{$portfolio_item->start_date}} - End Date: {{$portfolio_item->end_date}}</li>
+                                            <li>Category: {{$portfolio_item->category}}</li>
                                         </ul>
                                         <a href="{{$portfolio_item->external_link}}" target="_blank"><button
                                                 class="btn btn-primary" type="button">

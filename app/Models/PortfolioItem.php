@@ -20,4 +20,8 @@ class PortfolioItem extends Model
         "end_date",
         "category"
     ];
+
+    public function getThumbnailAbsolutePathAttribute(){
+        return config("app.url") . "/storage/" . $this->thumbnail;
+    }
 }
