@@ -19,9 +19,9 @@ class Email extends Mailable
 
     public function build()
     {
-        $address = 'georgesmpopovic@gmail.com';
+        $address = config("mail.from.address");
         $subject = ''; //"New mail from: $this->data['name'] @ $this->data['email']";
-        $name = 'George Popovic';
+        $name = config("mail.from.name");
 
         return $this->view('emails.index')
             ->from($address, $name)
