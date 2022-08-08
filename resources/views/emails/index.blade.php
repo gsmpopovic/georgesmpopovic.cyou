@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <h2>Hi George</h2>
+    <h2>Hi George (I'm from your portfolio site!)</h2>
     <h3>You've got mail!</h3>
     <p>Name: {{ $name }}</p>
     <p>Phone: {{ $phone }}</p>
